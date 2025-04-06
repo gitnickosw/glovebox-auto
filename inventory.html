@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Inventory - Glovebox Auto</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- styling for filter section -->
+    <style>
+        .inventory-filter {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Glovebox Auto Logo" id="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Current Inventory</h1>
+        
+        <!-- vehicle search filters -->
+        <section class="inventory-filter">
+            <h2>Filter Vehicles</h2>
+            <form>
+                <div>
+                    <label for="make-filter">Make:</label>
+                    <select id="make-filter" name="make">
+                        <option value="">All Makes</option>
+                        <option value="honda">Honda</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="ford">Ford</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="price-range">Price Range:</label>
+                    <select id="price-range" name="price">
+                        <option value="">Any Price</option>
+                        <option value="0-10000">$0 - $10,000</option>
+                        <option value="10000-20000">$10,000 - $20,000</option>
+                        <option value="20000-30000">$20,000 - $30,000</option>
+                        <option value="30000-40000">$30,000+</option>
+                    </select>
+                </div>
+                
+                <button type="submit">Apply Filters</button>
+            </form>
+        </section>
+
+        <!-- main vehicle listings table -->
+        <table class="inventory-table">
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Year/Make/Model</th>
+                    <th>Price</th>
+                    <th>Mileage</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/featured-car1.jpg" alt="2018 Honda Accord" class="table-img"></td>
+                    <td>2018 Honda Accord</td>
+                    <td>$18,995</td>
+                    <td>42,000</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/featured-car2.jpg" alt="2020 Toyota RAV4" class="table-img"></td>
+                    <td>2020 Toyota RAV4</td>
+                    <td>$24,500</td>
+                    <td>28,500</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/featured-car3.jpg" alt="2019 Ford F-150" class="table-img"></td>
+                    <td>2019 Ford F-150</td>
+                    <td>$32,750</td>
+                    <td>35,200</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/subaru-wrx.jpg" alt="2017 Subaru WRX" class="table-img"></td>
+                    <td>2017 Subaru WRX</td>
+                    <td>$22,800</td>
+                    <td>89,000</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/ford-fusion.jpg" alt="2016 Ford Fusion" class="table-img"></td>
+                    <td>2016 Ford Fusion</td>
+                    <td>$14,250</td>
+                    <td>90,000</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/volvo-s80.jpg" alt="2012 Volvo S80" class="table-img"></td>
+                    <td>2012 Volvo S80</td>
+                    <td>$11,900</td>
+                    <td>120,000</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/audi-a5.jpg" alt="2015 Audi A5" class="table-img"></td>
+                    <td>2015 Audi A5</td>
+                    <td>$19,750</td>
+                    <td>100,000</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <!-- same footer as index.html -->
+    </footer>
+</body>
+</html>

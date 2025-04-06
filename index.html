@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glovebox Auto - Quality Used Cars</title>
+    <!-- main stylesheet for site -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- extra styling for featured vehicle titles -->
+    <style>
+        .featured-title {
+            color: #d35400;
+            text-shadow: 1px 1px 2px #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Glovebox Auto Logo" id="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Glovebox Auto</h1>
+            <p>Your trusted source for quality used vehicles</p>
+            <!-- browse button with styling -->
+            <a href="inventory.html" style="background-color: #e67e22; padding: 10px 20px; color: white; text-decoration: none; border-radius: 5px;">Browse Inventory</a>
+        </section>
+
+        <section class="featured">
+            <h2 class="featured-title">Featured Vehicles</h2>
+            <div class="vehicle-showcase">
+                <article>
+                    <img src="images/featured-car1.jpg" alt="Featured Car 1">
+                    <h3>2018 Honda Accord</h3>
+                    <p>$18,995</p>
+                    <p><strong>Mileage:</strong> 42,000</p>
+                </article>
+                <article>
+                    <img src="images/featured-car2.jpg" alt="Featured Car 2">
+                    <h3>2020 Toyota RAV4</h3>
+                    <p>$24,500</p>
+                    <p><strong>Mileage:</strong> 28,500</p>
+                </article>
+                <article>
+                    <img src="images/featured-car3.jpg" alt="Featured Car 3">
+                    <h3>2019 Ford F-150</h3>
+                    <p>$32,750</p>
+                    <p><strong>Mileage:</strong> 35,200</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- quick search sidebar -->
+        <aside class="quick-search">
+            <h2>Quick Search</h2>
+            <form>
+                <label for="make">Make:</label>
+                <select id="make" name="make">
+                    <option value="">Any Make</option>
+                    <option value="honda">Honda</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="ford">Ford</option>
+                </select>
+                
+                <label for="price">Max Price:</label>
+                <select id="price" name="price">
+                    <option value="">Any Price</option>
+                    <option value="10000">$10,000</option>
+                    <option value="20000">$20,000</option>
+                    <option value="30000">$30,000</option>
+                </select>
+                
+                <button type="submit">Search</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>123 Auto Lane</p>
+                <p>Cartown, CA 90210</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Glovebox Auto. All rights reserved.</p>
+    </footer>
+</body>
+</html>
